@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Maze_runner {
-
     public static void main(String[] args) {
         intro();
         userMove();
