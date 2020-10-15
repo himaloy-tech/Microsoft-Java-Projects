@@ -6,15 +6,12 @@ public class Maze_runner {
         intro();
         userMove();
     }
-
     public static void intro(){
         System.out.println("Welcome to Maze runner");
         System.out.println("Here is your current position:");
         Maze myMap = new Maze();
         myMap.printMap();
-//        System.out.println(myMap.canIMoveRight());
     }
-
     public static void userMove() {
         Maze myMap = new Maze();
         boolean out_of_moves = false;
@@ -160,7 +157,6 @@ public class Maze_runner {
             }
         }
     }
-
     public static boolean movesMessage(int moves){
         boolean over = false;
         if (moves == 50){
@@ -178,7 +174,6 @@ public class Maze_runner {
         }
         return over;
     }
-
     public static boolean navigatePit(String move) {
         Maze myMap = new Maze();
         if (myMap.isThereAPit(move)){
